@@ -65,10 +65,7 @@ export const OCCASIONS = [
   },
 ];
 
-const IMG_EARBUDS = "https://media.base44.com/images/public/6a79545ee4e7438403de5ab9/0732b1708_generated_1de3c858.png";
 const IMG_NECKBAND = "https://media.base44.com/images/public/6a79545ee4e7438403de5ab9/ef160d25e_generated_2a0eed2e.png";
-const IMG_POWERBANK = "https://media.base44.com/images/public/6a79545ee4e7438403de5ab9/c0de2531f_generated_770d3880.png";
-const IMG_HAMPER = "https://media.base44.com/images/public/6a79545ee4e7438403de5ab9/1533f1db3_generated_05e0a91a.png";
 
 export const PRODUCT_CATEGORIES = [
   "TWS Earbuds",
@@ -81,7 +78,7 @@ export const PRODUCTS = [
   {
     name: "REVE-Seraph True Wireless Earbuds",
     category: "TWS Earbuds",
-    image: IMG_EARBUDS,
+    image: "/images/products/earbuds/REVE SERAPH - Silver Black.png",
     alt: "White true wireless earbuds with charging case",
     description: "Signature true wireless earbuds, a favourite inclusion in corporate hampers.",
     feature: "True Wireless",
@@ -89,7 +86,7 @@ export const PRODUCTS = [
   {
     name: "Buds Tone",
     category: "TWS Earbuds",
-    image: IMG_EARBUDS,
+    image: "/images/products/earbuds/Model buds tone.png",
     alt: "Compact true wireless earbuds with charging case",
     description: "Everyday true wireless earbuds for teams on the move.",
     feature: "True Wireless",
@@ -97,7 +94,7 @@ export const PRODUCTS = [
   {
     name: "Active",
     category: "TWS Earbuds",
-    image: IMG_EARBUDS,
+    image: "/images/products/earbuds/Active.png",
     alt: "True wireless earbuds resting on a warm ivory surface",
     description: "A practical wireless companion for busy workdays.",
     feature: "True Wireless",
@@ -105,7 +102,7 @@ export const PRODUCTS = [
   {
     name: "Soul",
     category: "TWS Earbuds",
-    image: IMG_EARBUDS,
+    image: "/images/products/earbuds/Soul.png",
     alt: "Premium true wireless earbuds and case",
     description: "A refined listening experience, gift-ready out of the box.",
     feature: "True Wireless",
@@ -169,7 +166,7 @@ export const PRODUCTS = [
   {
     name: "PB 008",
     category: "Power Banks",
-    image: IMG_POWERBANK,
+    image: "/images/products/powerbanks/PB 008.png",
     alt: "Slim matte power bank with a coiled cable",
     description: "A slim, portable power bank — a practical gift people keep using.",
     feature: "Portable Power",
@@ -177,7 +174,7 @@ export const PRODUCTS = [
   {
     name: "Corporate Gift Hamper",
     category: "Gift Hampers",
-    image: IMG_HAMPER,
+    image: "/images/products/hampers/Gift Box.png",
     alt: "Premium ivory gift hamper box with peach ribbon",
     description:
       "A curated blend of technology, wellness and treats, presented in a premium gift box.",
@@ -285,8 +282,8 @@ export const FAQS = [
 ];
 
 export const IMAGES = {
-  hero: "https://media.base44.com/images/public/6a79545ee4e7438403de5ab9/930369f69_generated_d957f143.png",
-  branding: "https://media.base44.com/images/public/6a79545ee4e7438403de5ab9/1c429e626_generated_e8ac42f1.png",
-  banner: "https://media.base44.com/images/public/6a79545ee4e7438403de5ab9/e20b59476_generated_5f94e157.png",
-  signatureHamper: "https://media.base44.com/images/public/6a79545ee4e7438403de5ab9/a9b5a0a98_generated_4fa84fc3.png",
+  hero: "/images/hero/hero.png",
+  branding: "/images/branding/brand.png",
+  banner: "/images/banners/banner.png",
+  signatureHamper: "/images/hero/sinature_hero.png",
 };
