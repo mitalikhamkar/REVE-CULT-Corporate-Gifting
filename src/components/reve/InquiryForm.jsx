@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Check, MessageCircle } from "lucide-react";
+import { collection, addDoc, serverTimestamp } from "firebase/firestore";
+import { db } from "@/lib/firebase";
 import { OCCASIONS, PRODUCT_CATEGORIES, WHATSAPP_LINK } from "@/data/site";
 import Button from "./Button";
 import { fadeUp, stagger, viewport } from "./motion";
@@ -29,11 +31,18 @@ export default function InquiryForm() {
     e.preventDefault();
     setStatus("submitting");
     try {
-      // No backend is wired up yet — store the inquiry locally so nothing
-      // is lost, and surface the same success state to the user.
-      const stored = JSON.parse(localStorage.getItem("reve_inquiries") || "[]");
-      stored.push({ ...form, status: "new", submitted_at: new Date().toISOString() });
-      localStorage.setItem("reve_inquiries", JSON.stringify(stored));
+      await addDoc(collection(db, "inquiries"), {
+        full_name: form.full_name,
+        company_name: form.company_name,
+        work_email: form.work_email,
+        phone: form.phone,
+        occasion: form.occasion,
+        quantity: form.quantity,
+        gift_preference: form.gift_preference,
+        message: form.message,
+        status: "new",
+        submitted_at: serverTimestamp(),
+      });
       setStatus("success");
       setForm(EMPTY);
     } catch {
