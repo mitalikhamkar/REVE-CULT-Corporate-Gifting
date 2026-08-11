@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { PRODUCTS, PRODUCT_CATEGORIES } from "@/data/site";
 import SectionHeading from "./SectionHeading";
@@ -9,8 +9,17 @@ import { cn } from "@/lib/utils";
 export default function FeaturedGifts() {
   const [active, setActive] = useState("All");
   const categories = ["All", ...PRODUCT_CATEGORIES];
+
+  const representatives = useMemo(
+    () =>
+      PRODUCT_CATEGORIES.map((cat) => PRODUCTS.find((p) => p.category === cat)).filter(
+        Boolean
+      ),
+    []
+  );
+
   const items =
-    active === "All" ? PRODUCTS : PRODUCTS.filter((p) => p.category === active);
+    active === "All" ? representatives : PRODUCTS.filter((p) => p.category === active);
 
   return (
     <section id="gifts" className="py-20 lg:py-32 bg-white/60">
@@ -39,18 +48,20 @@ export default function FeaturedGifts() {
         </div>
       </div>
 
-      <motion.div
-        key={active}
-        variants={stagger(0.05)}
-        initial="hidden"
-        whileInView="show"
-        viewport={viewport}
-        className="mt-12 flex gap-4 overflow-x-auto no-scrollbar snap-x snap-mandatory px-5 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-6 sm:overflow-visible sm:px-8 lg:px-14 max-w-[92rem] mx-auto"
-      >
-        {items.map((p) => (
-          <ProductCard key={p.name} product={p} />
-        ))}
-      </motion.div>
+      <div className="mt-12 px-5 sm:px-8 lg:px-14 max-w-[92rem] mx-auto">
+        <motion.div
+          key={active}
+          variants={stagger(0.05)}
+          initial="hidden"
+          whileInView="show"
+          viewport={viewport}
+          className="reve-scrollbar flex gap-4 sm:gap-6 overflow-x-auto snap-x snap-mandatory pb-4"
+        >
+          {items.map((p) => (
+            <ProductCard key={p.name} product={p} />
+          ))}
+        </motion.div>
+      </div>
     </section>
   );
 }

@@ -1,3 +1,4 @@
+//Home.jsx
 import React from "react";
 import Navbar from "@/components/reve/Navbar";
 import Hero from "@/components/reve/Hero";

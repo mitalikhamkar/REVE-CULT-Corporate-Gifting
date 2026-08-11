@@ -60,16 +60,31 @@
 @layer utilities {
   .no-scrollbar::-webkit-scrollbar { display: none; }
   .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  .reve-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #C98268 #F3E4DA;
+  }
+  .reve-scrollbar::-webkit-scrollbar {
+    height: 6px;
+  }
+  .reve-scrollbar::-webkit-scrollbar-track {
+    background: #F3E4DA;
+    border-radius: 9999px;
+  }
+  .reve-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #C98268;
+    border-radius: 9999px;
+  }
   .eyebrow {
     @apply text-[11px] sm:text-xs uppercase tracking-[0.24em] font-medium text-reve-terracotta;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  *, *::before, *::after {
+  * {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
