@@ -22,7 +22,7 @@ export default function SignatureHamper() {
               src={IMAGES.signatureHamper}
               alt="Signature corporate hamper with earbuds, luxe case bag, cloth pouch, dry fruits and chocolates"
               loading="lazy"
-              className="w-full h-[24rem] lg:h-[36rem] object-cover"
+              className="w-full h-[24rem] lg:h-[36rem] object-cover object-[70%_center]"
             />
           </div>
           <div aria-hidden="true" className="absolute -z-10 -bottom-6 -left-6 w-40 h-40 rounded-full bg-reve-peach/50 blur-2xl" />
