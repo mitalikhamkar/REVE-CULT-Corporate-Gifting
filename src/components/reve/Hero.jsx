@@ -2,11 +2,13 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Image } from "@/components/ui/image";
-import { IMAGES } from "@/data/site";
+import { useActiveTheme } from "@/context/ThemeContext";
 import Button from "./Button";
 import { fadeUp, stagger } from "./motion";
 
 export default function Hero() {
+  const theme = useActiveTheme();
+
   return (
     <section
       id="home"
@@ -15,7 +17,7 @@ export default function Hero() {
       {/* Full-bleed background image */}
       <div className="absolute inset-0">
         <Image
-          src={IMAGES.hero}
+          src={theme.hero}
           alt="Premium corporate gift hamper with wireless earbuds, dry fruits and chocolates in an ivory gift box"
           className="w-full h-full object-cover object-[65%_center] sm:object-center"
         />

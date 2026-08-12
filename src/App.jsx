@@ -5,8 +5,9 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PageNotFound from './lib/PageNotFound';
 import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
-import AdminGuard from './components/admin/AdminGuard';
+import { ThemeProvider } from './context/ThemeContext';
 import AdminLogin from './pages/admin/AdminLogin';
+import AdminGuard from './components/admin/AdminGuard';
 import AdminLayout from './pages/admin/AdminLayout';
 import AdminDashboard from './pages/admin/AdminDashboard';
 import InquiriesPage from './pages/admin/InquiriesPage';
@@ -19,14 +20,22 @@ function App() {
       <Router>
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route
+            path="/"
+            element={
+              <ThemeProvider>
+                <Home />
+              </ThemeProvider>
+            }
+          />
 
           <Route path="/admin/login" element={<AdminLogin />} />
-          <Route path="/admin" element={<AdminGuard />}>
+
+          <Route element={<AdminGuard />}>
             <Route element={<AdminLayout />}>
-              <Route index element={<AdminDashboard />} />
-              <Route path="inquiries" element={<InquiriesPage />} />
-              <Route path="themes" element={<ThemesPage />} />
+              <Route path="/admin" element={<AdminDashboard />} />
+              <Route path="/admin/inquiries" element={<InquiriesPage />} />
+              <Route path="/admin/themes" element={<ThemesPage />} />
             </Route>
           </Route>
 

@@ -1,8 +1,11 @@
-import React, { useState } from "react";
-import { Check, Sparkles } from "lucide-react";
+import React, { useEffect, useState } from "react";
+import { Check, Sparkles, AlertTriangle } from "lucide-react";
+import { doc, onSnapshot, setDoc } from "firebase/firestore";
+import { db } from "@/lib/firebase";
+import { DEFAULT_THEME_ID } from "@/config/themes";
 import { cn } from "@/lib/utils";
 
-const THEMES = [
+const THEME_OPTIONS = [
   {
     id: "default",
     name: "Default",
@@ -30,7 +33,48 @@ const THEMES = [
 ];
 
 export default function ThemesPage() {
-  const [selected, setSelected] = useState("default");
+  const [activeTheme, setActiveTheme] = useState(DEFAULT_THEME_ID);
+  const [selected, setSelected] = useState(DEFAULT_THEME_ID);
+  const [loading, setLoading] = useState(true);
+  const [saving, setSaving] = useState(false);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const ref = doc(db, "settings", "theme");
+    const unsubscribe = onSnapshot(
+      ref,
+      (snap) => {
+        const current = snap.exists() ? snap.data().activeTheme : DEFAULT_THEME_ID;
+        setActiveTheme(current || DEFAULT_THEME_ID);
+        setSelected(current || DEFAULT_THEME_ID);
+        setLoading(false);
+        setError(null);
+      },
+      (err) => {
+        console.error("Failed to read active theme:", err);
+        setError(err.message || "Failed to load the current theme.");
+        setLoading(false);
+      }
+    );
+    return unsubscribe;
+  }, []);
+
+  const handleSave = async () => {
+    setSaving(true);
+    setError(null);
+    try {
+      await setDoc(doc(db, "settings", "theme"), { activeTheme: selected }, { merge: true });
+      setActiveTheme(selected);
+    } catch (err) {
+      console.error("Failed to save active theme:", err);
+      setError(err.message || "Failed to save the theme. Please try again.");
+    } finally {
+      setSaving(false);
+    }
+  };
+
+  const hasChanges = selected !== activeTheme;
+  const activeName = THEME_OPTIONS.find((t) => t.id === activeTheme)?.name || "Default";
 
   return (
     <div>
@@ -39,28 +83,50 @@ export default function ThemesPage() {
         Choose the occasion theme for the public website.
       </p>
 
-      <div className="mt-3 inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-reve-peachcream text-reve-brown text-xs font-medium">
-        <Sparkles className="w-3.5 h-3.5" />
-        Preview only — live theme switching is coming soon
-      </div>
+      {!loading && !error && (
+        <div className="mt-3 inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-reve-peachcream text-reve-brown text-xs font-medium">
+          <Sparkles className="w-3.5 h-3.5" />
+          Live on the public site: {activeName}
+        </div>
+      )}
+
+      {error && (
+        <div className="mt-4 flex items-start gap-3 rounded-2xl border border-red-200 bg-red-50 px-5 py-4">
+          <AlertTriangle className="w-5 h-5 text-red-500 shrink-0 mt-0.5" />
+          <div>
+            <p className="text-sm font-medium text-red-700">Something went wrong.</p>
+            <p className="mt-0.5 text-xs text-red-600">{error}</p>
+          </div>
+        </div>
+      )}
 
       <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {THEMES.map((t) => (
+        {THEME_OPTIONS.map((t) => (
           <button
             key={t.id}
             onClick={() => setSelected(t.id)}
+            disabled={loading}
             className={cn(
-              "text-left bg-white rounded-2xl border p-6 transition-colors",
-              selected === t.id ? "border-reve-terracotta ring-1 ring-reve-terracotta" : "border-reve-border/70 hover:border-reve-terracotta/50"
+              "text-left bg-white rounded-2xl border p-6 transition-colors disabled:opacity-60",
+              selected === t.id
+                ? "border-reve-terracotta ring-1 ring-reve-terracotta"
+                : "border-reve-border/70 hover:border-reve-terracotta/50"
             )}
           >
             <div className="flex items-center justify-between">
               <p className="font-heading text-lg font-semibold text-reve-charcoal">{t.name}</p>
-              {selected === t.id && (
-                <span className="w-6 h-6 rounded-full bg-reve-terracotta text-white flex items-center justify-center">
-                  <Check className="w-3.5 h-3.5" />
-                </span>
-              )}
+              <div className="flex items-center gap-2">
+                {activeTheme === t.id && (
+                  <span className="text-[10px] uppercase tracking-wide font-medium text-reve-terracotta">
+                    Active
+                  </span>
+                )}
+                {selected === t.id && (
+                  <span className="w-6 h-6 rounded-full bg-reve-terracotta text-white flex items-center justify-center">
+                    <Check className="w-3.5 h-3.5" />
+                  </span>
+                )}
+              </div>
             </div>
             <p className="mt-2 text-sm text-reve-brown">{t.description}</p>
             <div className="mt-4 flex gap-2">
@@ -78,14 +144,16 @@ export default function ThemesPage() {
 
       <div className="mt-8 flex items-center gap-3">
         <button
-          disabled
-          title="Live theme switching isn't connected yet"
-          className="px-6 py-3 rounded-full bg-reve-charcoal text-white text-sm font-medium opacity-50 cursor-not-allowed"
+          onClick={handleSave}
+          disabled={!hasChanges || saving || loading}
+          className="px-6 py-3 rounded-full bg-reve-charcoal text-white text-sm font-medium disabled:opacity-50 disabled:cursor-not-allowed hover:bg-reve-charcoal/90 transition-colors"
         >
-          Save Theme
+          {saving ? "Saving…" : "Save Theme"}
         </button>
         <p className="text-xs text-reve-brown/70">
-          Saving will be enabled once the theme is wired up to Firestore.
+          {hasChanges
+            ? "Changes apply to the public website immediately after saving."
+            : "This is the theme currently live on the public site."}
         </p>
       </div>
     </div>

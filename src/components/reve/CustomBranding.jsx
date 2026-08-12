@@ -2,11 +2,14 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Image } from "@/components/ui/image";
-import { IMAGES, BRANDING_CHIPS } from "@/data/site";
+import { BRANDING_CHIPS } from "@/data/site";
+import { useActiveTheme } from "@/context/ThemeContext";
 import Button from "./Button";
 import { fadeUp, stagger, viewport } from "./motion";
 
 export default function CustomBranding() {
+  const theme = useActiveTheme();
+
   return (
     <section id="corporate" className="py-20 lg:py-32 px-5 sm:px-8 lg:px-14 bg-white/60">
       <div className="max-w-[92rem] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -18,7 +21,7 @@ export default function CustomBranding() {
           className="overflow-hidden rounded-[2rem] lg:rounded-[3rem]"
         >
           <Image
-            src={IMAGES.branding}
+            src={theme.decorative}
             alt="Close-up of a terracotta vegan-leather pouch and matte ivory gift box showing premium packaging texture"
             loading="lazy"
             className="w-full h-[22rem] lg:h-[32rem] object-cover"

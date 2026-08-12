@@ -1,15 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Image } from "@/components/ui/image";
-import { IMAGES } from "@/data/site";
+import { useActiveTheme } from "@/context/ThemeContext";
 import { viewport } from "./motion";
 
 export default function CampaignBanner() {
+  const theme = useActiveTheme();
+
   return (
     <section className="px-5 sm:px-8 lg:px-14">
       <div className="relative max-w-[92rem] mx-auto overflow-hidden rounded-[2rem] lg:rounded-[3rem]">
         <Image
-          src={IMAGES.banner}
+          src={theme.banner}
           alt="Festive corporate gifting table with rows of ivory and peach gift boxes"
           loading="lazy"
           className="w-full h-[26rem] lg:h-[34rem] object-cover"
