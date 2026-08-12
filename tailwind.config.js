@@ -12,11 +12,11 @@ module.exports = {
   		colors: {
   			reve: {
   				ivory: '#FFF9F4',
-  				peach: '#F8D8C8',
+  				peach: 'var(--reve-peach, #F8D8C8)',
   				blush: '#F3C6B5',
   				peachcream: '#FBE9DF',
-  				terracotta: '#C98268',
-  				brown: '#8A5A4A',
+  				terracotta: 'var(--reve-terracotta, #C98268)',
+  				brown: 'var(--reve-brown, #8A5A4A)',
   				charcoal: '#292522',
   				beige: '#EAD8CC',
   				border: '#EAD8CC'

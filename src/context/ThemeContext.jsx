@@ -26,7 +26,20 @@ export function ThemeProvider({ children }) {
 
   const theme = getTheme(themeId);
 
-  return <ThemeContext.Provider value={theme}>{children}</ThemeContext.Provider>;
+  // CSS custom properties scoped to this wrapper only — the Tailwind config
+  // reads these via var(--reve-x, <default hex>), so anything outside this
+  // wrapper (e.g. the admin panel) always falls back to the original colors.
+  const cssVars = {
+    "--reve-terracotta": theme.colors.terracotta,
+    "--reve-peach": theme.colors.peach,
+    "--reve-brown": theme.colors.brown,
+  };
+
+  return (
+    <ThemeContext.Provider value={theme}>
+      <div style={cssVars}>{children}</div>
+    </ThemeContext.Provider>
+  );
 }
 
 function THEME_EXISTS(id) {
