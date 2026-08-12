@@ -24,10 +24,8 @@ export default function Navbar() {
   return (
     <header
       className={cn(
-        "fixed top-0 inset-x-0 z-50 transition-all duration-300",
-        scrolled
-          ? "bg-reve-ivory/80 backdrop-blur-xl border-b border-reve-border/70"
-          : "bg-transparent border-b border-transparent"
+        "fixed top-0 inset-x-0 z-50 transition-shadow duration-300 bg-reve-ivory/90 backdrop-blur-xl border-b border-reve-border/60",
+        scrolled ? "shadow-[0_1px_20px_-4px_rgba(41,37,34,0.12)]" : "shadow-none"
       )}
     >
       <nav className="max-w-[92rem] mx-auto px-5 sm:px-8 lg:px-14 h-[72px] lg:h-20 flex items-center justify-between">

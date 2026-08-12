@@ -21,7 +21,7 @@ export default function WhyReveCult() {
         {BENEFITS.map((b) => {
           const Icon = icons[b.icon];
           return (
-            <motion.div key={b.title} variants={fadeUp} className="max-w-sm">
+            <motion.div key={b.title} variants={fadeUp}>
               <Icon className="w-7 h-7 text-reve-terracotta" strokeWidth={1.3} />
               <h3 className="mt-5 font-heading text-xl font-semibold text-reve-charcoal">{b.title}</h3>
               <p className="mt-2.5 text-sm text-reve-brown leading-relaxed">{b.text}</p>
