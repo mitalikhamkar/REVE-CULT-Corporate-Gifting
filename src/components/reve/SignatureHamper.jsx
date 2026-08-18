@@ -8,7 +8,7 @@ import { fadeUp, stagger, viewport } from "./motion";
 
 export default function SignatureHamper() {
   return (
-    <section className="py-20 lg:py-32 px-5 sm:px-8 lg:px-14">
+    <section id="hampers" className="py-20 lg:py-32 px-5 sm:px-8 lg:px-14">
       <div className="max-w-[92rem] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -71,4 +71,3 @@ export default function SignatureHamper() {
     </section>
   );
 }
-
