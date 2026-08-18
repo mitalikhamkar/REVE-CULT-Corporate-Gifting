@@ -1,17 +1,18 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Users, Handshake, UserPlus, Sparkles, CalendarDays, Award } from "lucide-react";
+import { Users, Handshake, UserPlus, Sparkles, CalendarDays, Award, ArrowRight } from "lucide-react";
 import { INDUSTRIES } from "@/data/site";
 import SectionHeading from "./SectionHeading";
+import Button from "./Button";
 import { fadeUp, stagger, viewport } from "./motion";
 
 const icons = { Users, Handshake, UserPlus, Sparkles, CalendarDays, Award };
 
 export default function Industries() {
   return (
-    <section className="py-20 lg:py-32 px-5 sm:px-8 lg:px-14">
+    <section id="corporate" className="py-20 lg:py-32 px-5 sm:px-8 lg:px-14">
       <SectionHeading
-        eyebrow="Use Cases"
+        eyebrow="Corporate Gifting"
         title="Made for Every Team"
         subtitle="Gifting programmes shaped around the people and moments that matter to your business."
       />
@@ -37,6 +38,18 @@ export default function Industries() {
             </motion.div>
           );
         })}
+      </motion.div>
+
+      <motion.div
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="show"
+        viewport={viewport}
+        className="mt-12 flex justify-center"
+      >
+        <Button as="a" href="#quote">
+          Request a Corporate Gifting Quote <ArrowRight className="w-4 h-4" />
+        </Button>
       </motion.div>
     </section>
   );

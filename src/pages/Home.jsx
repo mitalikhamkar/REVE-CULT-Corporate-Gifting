@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "@/components/reve/Navbar";
 import Hero from "@/components/reve/Hero";
 import TrustStrip from "@/components/reve/TrustStrip";
+import AboutReveCult from "@/components/reve/AboutReveCult";
 import Occasions from "@/components/reve/Occasions";
 import FeaturedGifts from "@/components/reve/FeaturedGifts";
 import SignatureHamper from "@/components/reve/SignatureHamper";
@@ -24,6 +25,7 @@ export default function Home() {
       <main>
         <Hero />
         <TrustStrip />
+        <AboutReveCult />
         <Occasions />
         <FeaturedGifts />
         <SignatureHamper />

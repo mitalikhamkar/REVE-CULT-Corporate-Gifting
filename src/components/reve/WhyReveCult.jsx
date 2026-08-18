@@ -9,7 +9,7 @@ const icons = { Gem, PenTool, Truck, ShieldCheck, Headset, Users };
 
 export default function WhyReveCult() {
   return (
-    <section id="about" className="py-20 lg:py-32 px-5 sm:px-8 lg:px-14 bg-white/60">
+    <section id="why" className="py-20 lg:py-32 px-5 sm:px-8 lg:px-14 bg-white/60">
       <SectionHeading eyebrow="Why REVE CULT" title="Thoughtful Beyond Compare." />
       <motion.div
         variants={stagger(0.06)}
