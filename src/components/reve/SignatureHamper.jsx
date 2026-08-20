@@ -2,9 +2,14 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Check } from "lucide-react";
 import { Image } from "@/components/ui/image";
-import { IMAGES, HAMPER_INCLUSIONS, HAMPER_CUSTOM_OPTIONS } from "@/data/site";
+import { IMAGES, HAMPER_INCLUSIONS, HAMPER_CUSTOM_OPTIONS, PRODUCTS } from "@/data/site";
 import Button from "./Button";
+import ProductCard from "./ProductCard";
 import { fadeUp, stagger, viewport } from "./motion";
+
+const OTHER_HAMPERS = PRODUCTS.filter(
+  (p) => p.category === "Gift Hampers" && p.name !== "Corporate Gift Hamper"
+);
 
 export default function SignatureHamper() {
   return (
@@ -68,6 +73,50 @@ export default function SignatureHamper() {
           </motion.div>
         </motion.div>
       </div>
+
+      {OTHER_HAMPERS.length > 0 && (
+        <div className="max-w-[92rem] mx-auto mt-20 lg:mt-28">
+          <motion.div
+            variants={stagger(0.06)}
+            initial="hidden"
+            whileInView="show"
+            viewport={viewport}
+            className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4"
+          >
+            <div>
+              <motion.p variants={fadeUp} className="eyebrow mb-4">More Hamper Collections</motion.p>
+              <motion.h3
+                variants={fadeUp}
+                className="font-heading text-2xl sm:text-3xl lg:text-4xl font-semibold text-reve-charcoal leading-tight"
+              >
+                Every Colourway, Curated the Same Way
+              </motion.h3>
+              <motion.p variants={fadeUp} className="mt-3 text-reve-brown text-sm sm:text-base leading-relaxed max-w-xl">
+                Beyond the Signature Hamper, REVE Flora and REVE Seraph hampers bring
+                the same thoughtful pairing of earbuds, pouch and essentials in
+                distinct finishes — pick the one that fits your brand.
+              </motion.p>
+            </div>
+            <motion.div variants={fadeUp} className="shrink-0">
+              <Button as="a" href="#quote" variant="outline">
+                Discuss Hamper Options <ArrowRight className="w-4 h-4" />
+              </Button>
+            </motion.div>
+          </motion.div>
+
+          <motion.div
+            variants={stagger(0.05)}
+            initial="hidden"
+            whileInView="show"
+            viewport={viewport}
+            className="reve-scrollbar mt-10 flex gap-4 sm:gap-6 overflow-x-auto snap-x snap-mandatory pb-4"
+          >
+            {OTHER_HAMPERS.map((p) => (
+              <ProductCard key={p.name} product={p} />
+            ))}
+          </motion.div>
+        </div>
+      )}
     </section>
   );
 }
