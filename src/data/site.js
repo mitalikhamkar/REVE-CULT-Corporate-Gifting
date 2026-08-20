@@ -182,7 +182,7 @@ export const PRODUCTS = [
     category: "TWS Earbuds",
     image: "/images/products/earbuds/REVE FLORA - Golden Beige.png",
     alt: "REVE Flora true wireless earbuds in Golden Beige",
-    description: "Part of the REVE CULT TWS Earbuds range — ask our team for full specifications.",
+    description: "REVE Flora true wireless earbuds with active noise cancellation, a 13mm driver and Bluetooth 5.4, featuring a floral-inspired design and up to 8-10 hours of playback — shown here in a warm Golden Beige finish.",
     feature: "True Wireless",
   },
   {
@@ -190,7 +190,7 @@ export const PRODUCTS = [
     category: "TWS Earbuds",
     image: "/images/products/earbuds/REVE FLORA - Golden Black.png",
     alt: "REVE Flora true wireless earbuds in Golden Black",
-    description: "Part of the REVE CULT TWS Earbuds range — ask our team for full specifications.",
+    description: "REVE Flora true wireless earbuds with active noise cancellation, a 13mm driver and Bluetooth 5.4, featuring a floral-inspired design and up to 8-10 hours of playback — shown here in a Golden Black finish.",
     feature: "True Wireless",
   },
   {
@@ -295,7 +295,7 @@ export const PRODUCTS = [
     category: "Gift Hampers",
     image: "/images/products/hampers/REVE FLORA - Golden_Beige_Hamper_Other.jpeg",
     alt: "REVE Flora corporate gift hamper in Golden Beige",
-    description: "A curated REVE CULT gift hamper — ask our team for full contents and pricing.",
+    description: "A REVE Flora Golden Beige earbuds gift set with a carry pouch, charging cable, warranty card and QR support card, presented in REVE CULT's signature gift box.",
     feature: "Fully Customizable",
   },
   {
@@ -303,7 +303,7 @@ export const PRODUCTS = [
     category: "Gift Hampers",
     image: "/images/products/hampers/REVE FLORA - Golden_Black_Hamper_Other.jpeg",
     alt: "REVE Flora corporate gift hamper in Golden Black",
-    description: "A curated REVE CULT gift hamper — ask our team for full contents and pricing.",
+    description: "A REVE Flora Golden Black earbuds gift set with a carry pouch, charging cable, warranty card and QR support card, presented in REVE CULT's signature gift box.",
     feature: "Fully Customizable",
   },
   {
@@ -311,7 +311,7 @@ export const PRODUCTS = [
     category: "Gift Hampers",
     image: "/images/products/hampers/REVE SERAPH - Mint_Green_Hamper_Other.jpeg",
     alt: "REVE Seraph corporate gift hamper in Mint Green",
-    description: "A curated REVE CULT gift hamper — ask our team for full contents and pricing.",
+    description: "A REVE Seraph Mint Green earbuds gift set with a carry pouch, charging cable, warranty card and QR support card, presented in REVE CULT's signature gift box.",
     feature: "Fully Customizable",
   },
   {
@@ -319,7 +319,7 @@ export const PRODUCTS = [
     category: "Gift Hampers",
     image: "/images/products/hampers/REVE SERAPH - Silver_Black_Hamper_Other.jpeg",
     alt: "REVE Seraph corporate gift hamper in Silver Black",
-    description: "A curated REVE CULT gift hamper — ask our team for full contents and pricing.",
+    description: "A REVE Seraph Silver Black earbuds gift set with a carry pouch, charging cable, warranty card and QR support card, presented in REVE CULT's signature gift box.",
     feature: "Fully Customizable",
   },
   {
@@ -327,7 +327,7 @@ export const PRODUCTS = [
     category: "Gift Hampers",
     image: "/images/products/hampers/REVE SERAPH - Silver_White_Hamper_Other.jpeg",
     alt: "REVE Seraph corporate gift hamper in Silver White",
-    description: "A curated REVE CULT gift hamper — ask our team for full contents and pricing.",
+    description: "A REVE Seraph Silver White earbuds gift set with a carry pouch, charging cable, warranty card and QR support card, presented in REVE CULT's signature gift box.",
     feature: "Fully Customizable",
   },
 ];
