@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, X } from "lucide-react";
+import { ArrowRight, Check, X } from "lucide-react";
 import { Image } from "@/components/ui/image";
 import Button from "./Button";
 import { fadeUp } from "./motion";
@@ -54,6 +54,18 @@ export default function ProductCard({ product }) {
               <span className="text-[10px] uppercase tracking-[0.16em] text-reve-terracotta">{product.feature}</span>
               <h3 className="mt-2 font-heading text-2xl font-semibold text-reve-charcoal leading-snug">{product.name}</h3>
               <p className="mt-4 text-sm sm:text-base text-reve-brown leading-relaxed">{product.description}</p>
+
+              {product.specs && product.specs.length > 0 && (
+                <ul className="mt-6 space-y-2.5 border-t border-reve-border/70 pt-6">
+                  {product.specs.map((spec) => (
+                    <li key={spec} className="flex items-start gap-2.5 text-sm text-reve-charcoal">
+                      <Check className="w-4 h-4 text-reve-terracotta shrink-0 mt-0.5" strokeWidth={2} />
+                      <span>{spec}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+
               <Button as="a" href="#quote" onClick={() => setOpen(false)} className="mt-8">
                 Enquire Now <ArrowRight className="w-4 h-4" />
               </Button>

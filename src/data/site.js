@@ -80,6 +80,13 @@ export const PRODUCTS = [
     alt: "White true wireless earbuds with charging case",
     description: "Signature true wireless earbuds, a favourite inclusion in corporate hampers.",
     feature: "True Wireless",
+    specs: [
+      "Bluetooth 5.4 connectivity, 10-15m range",
+      "13mm driver, 35mAh per earbud, 300mAh charging case",
+      "Up to 5 hours playback/talk time per charge",
+      "Type-C charging — earbuds in ~55 min, case in ~80 min",
+      "Up to 150 days power-off standby",
+    ],
   },
   {
     name: "Buds Tone",
@@ -88,6 +95,13 @@ export const PRODUCTS = [
     alt: "Compact true wireless earbuds with charging case",
     description: "Everyday true wireless earbuds for teams on the move.",
     feature: "True Wireless",
+    specs: [
+      "Bluetooth 5.4 connectivity, 10-15m range",
+      "13mm driver, 300mAh charging case",
+      "Up to 35 hours combined talk & playback time",
+      "Type-C charging — case in ~80 min, earbuds in ~55 min",
+      "Up to 150 days power-off standby",
+    ],
   },
   {
     name: "Active",
@@ -96,6 +110,13 @@ export const PRODUCTS = [
     alt: "True wireless earbuds resting on a warm ivory surface",
     description: "A practical wireless companion for busy workdays.",
     feature: "True Wireless",
+    specs: [
+      "Bluetooth 5.4 connectivity with Active Noise Cancellation (ANC)",
+      "13mm driver, 300mAh charging case",
+      "Up to 35 hours combined talk & playback time",
+      "Type-C charging — case in ~60 min, earbuds in ~45 min",
+      "Up to 150 days power-off standby",
+    ],
   },
   {
     name: "Soul",
@@ -104,6 +125,13 @@ export const PRODUCTS = [
     alt: "Premium true wireless earbuds and case",
     description: "A refined listening experience, gift-ready out of the box.",
     feature: "True Wireless",
+    specs: [
+      "Bluetooth 5.3 connectivity with Active Noise Cancellation (ANC)",
+      "13mm driver, 300mAh charging case",
+      "Up to 35 hours combined talk & playback time",
+      "Type-C charging — case in ~80 min, earbuds in ~55 min",
+      "Up to 150 days power-off standby",
+    ],
   },
   {
     name: "Buds 3 Pro",
@@ -112,6 +140,13 @@ export const PRODUCTS = [
     alt: "True wireless earbuds with charging case, Buds 3 Pro",
     description: "True wireless earbuds with Bluetooth 5.4 and up to 35 hours of combined talk and playback time, with fast Type-C charging for dependable everyday use.",
     feature: "True Wireless",
+    specs: [
+      "Bluetooth 5.4 connectivity, 10-15m range",
+      "13mm driver, 300mAh charging case",
+      "Up to 35 hours combined talk & playback time",
+      "Type-C charging — case in ~80 min, earbuds in ~55 min",
+      "Up to 150 days power-off standby",
+    ],
   },
   {
     name: "Groove",
@@ -120,6 +155,12 @@ export const PRODUCTS = [
     alt: "True wireless earbuds with charging case, Groove",
     description: "Compact true wireless earbuds with a 10mm driver and Bluetooth 5.4, offering up to 35 hours of talk and playback time on a quick Type-C charge.",
     feature: "True Wireless",
+    specs: [
+      "Bluetooth 5.4 connectivity, 10mm driver",
+      "Up to 35 hours combined talk & playback time",
+      "Type-C charging — case in ~60 min, earbuds in ~45 min",
+      "Up to 150 days power-off standby",
+    ],
   },
   {
     name: "Master Buds 2",
@@ -128,6 +169,12 @@ export const PRODUCTS = [
     alt: "True wireless earbuds with charging case, Master Buds 2",
     description: "True wireless earbuds with Bluetooth 5.0, up to 35 hours of talk and playback time, and an extended 80-hour Bluetooth standby.",
     feature: "True Wireless",
+    specs: [
+      "Bluetooth 5.0 connectivity",
+      "Up to 35 hours combined talk & playback time",
+      "300mAh charging case, Type-C charging (~80 min)",
+      "Up to 80 hours Bluetooth standby",
+    ],
   },
   {
     name: "Model 181 Pro",
@@ -136,6 +183,13 @@ export const PRODUCTS = [
     alt: "True wireless earbuds with charging case, Model 181 Pro",
     description: "True wireless earbuds with Bluetooth 5.0 and up to 35 hours of talk and playback time, available in multiple finishes for a versatile corporate gift.",
     feature: "True Wireless",
+    specs: [
+      "Bluetooth 5.0 connectivity",
+      "Up to 35 hours combined talk & playback time",
+      "300mAh charging case, Type-C charging (~80 min)",
+      "Up to 80 hours Bluetooth standby",
+      "Available in grey, lavender and black finishes",
+    ],
   },
   {
     name: "Model Prime 231",
@@ -144,6 +198,12 @@ export const PRODUCTS = [
     alt: "True wireless earbuds with charging case, Model Prime 231",
     description: "Compact true wireless earbuds with Bluetooth 5.0 and Type-C charging, designed as a lightweight, pocket-friendly everyday companion.",
     feature: "True Wireless",
+    specs: [
+      "Bluetooth 5.0 connectivity",
+      "Up to 4-5 hours talk & playback per charge",
+      "Type-C charging case, ~80 minute full charge",
+      "Up to 80 hours Bluetooth standby",
+    ],
   },
   {
     name: "Model T310",
@@ -152,6 +212,12 @@ export const PRODUCTS = [
     alt: "True wireless earbuds with charging case, Model T310",
     description: "True wireless earbuds with Bluetooth 5.0 and up to 35 hours of talk and playback time, finished in a smooth matte design across black, white and lavender.",
     feature: "True Wireless",
+    specs: [
+      "Bluetooth 5.0 connectivity",
+      "Up to 35 hours combined talk & playback time",
+      "300mAh charging case, Type-C charging (~80 min)",
+      "Available in black, white and lavender finishes",
+    ],
   },
   {
     name: "Zenith",
@@ -160,6 +226,12 @@ export const PRODUCTS = [
     alt: "True wireless earbuds with charging case, Zenith",
     description: "True wireless earbuds with Bluetooth 5.0 and Type-C charging, finished in an elegant two-tone metallic design available in black, gold and rose finishes.",
     feature: "True Wireless",
+    specs: [
+      "Bluetooth 5.0 connectivity",
+      "Up to 4-5 hours talk & playback per charge",
+      "Type-C charging case, ~80 minute full charge",
+      "Two-tone metallic finish in black, gold and rose",
+    ],
   },
   {
     name: "OWS-X",
@@ -168,6 +240,12 @@ export const PRODUCTS = [
     alt: "Open-wear true wireless earbuds, OWS-X",
     description: "Open-ear clip-style true wireless earbuds with Bluetooth 5.0, up to 35 hours of talk and playback time, and an 80-hour Bluetooth standby.",
     feature: "True Wireless",
+    specs: [
+      "Bluetooth 5.0 connectivity, open-ear clip design",
+      "Up to 35 hours combined talk & playback time",
+      "300mAh charging case, Type-C charging (~80 min)",
+      "Up to 80 hours Bluetooth standby",
+    ],
   },
   {
     name: "Pro 2 Shining",
@@ -176,6 +254,12 @@ export const PRODUCTS = [
     alt: "True wireless earbuds with charging case, Pro 2 Shining",
     description: "True wireless earbuds with Bluetooth 5.0 and Type-C charging, finished in a high-shine glossy case available in five vibrant colourways.",
     feature: "True Wireless",
+    specs: [
+      "Bluetooth 5.0 connectivity",
+      "Up to 4-5 hours talk & playback per charge",
+      "Type-C charging case, ~80 minute full charge",
+      "Glossy finish available in five colourways",
+    ],
   },
   {
     name: "REVE Flora — Golden Beige",
@@ -184,6 +268,13 @@ export const PRODUCTS = [
     alt: "REVE Flora true wireless earbuds in Golden Beige",
     description: "REVE Flora true wireless earbuds with active noise cancellation, a 13mm driver and Bluetooth 5.4, featuring a floral-inspired design and up to 8-10 hours of playback — shown here in a warm Golden Beige finish.",
     feature: "True Wireless",
+    specs: [
+      "Bluetooth 5.4 with Active Noise Cancellation (ANC)",
+      "13mm composite film driver",
+      "Up to 8-10 hours music playback",
+      "Type-C charging, floral-inspired design",
+      "Available in Black and Gold finishes",
+    ],
   },
   {
     name: "REVE Flora — Golden Black",
@@ -192,6 +283,13 @@ export const PRODUCTS = [
     alt: "REVE Flora true wireless earbuds in Golden Black",
     description: "REVE Flora true wireless earbuds with active noise cancellation, a 13mm driver and Bluetooth 5.4, featuring a floral-inspired design and up to 8-10 hours of playback — shown here in a Golden Black finish.",
     feature: "True Wireless",
+    specs: [
+      "Bluetooth 5.4 with Active Noise Cancellation (ANC)",
+      "13mm composite film driver",
+      "Up to 8-10 hours music playback",
+      "Type-C charging, floral-inspired design",
+      "Available in Black and Gold finishes",
+    ],
   },
   {
     name: "REVE Seraph — Mint Green",
@@ -200,6 +298,13 @@ export const PRODUCTS = [
     alt: "REVE Seraph true wireless earbuds in Mint Green",
     description: "A Mint Green colourway of the signature REVE-Seraph true wireless earbuds.",
     feature: "True Wireless",
+    specs: [
+      "Bluetooth 5.4 connectivity, 10-15m range",
+      "13mm driver, 35mAh per earbud, 300mAh charging case",
+      "Up to 5 hours playback/talk time per charge",
+      "Type-C charging — earbuds in ~55 min, case in ~80 min",
+      "Up to 150 days power-off standby",
+    ],
   },
   {
     name: "REVE Seraph — Silver White",
@@ -208,6 +313,13 @@ export const PRODUCTS = [
     alt: "REVE Seraph true wireless earbuds in Silver White",
     description: "A Silver White colourway of the signature REVE-Seraph true wireless earbuds.",
     feature: "True Wireless",
+    specs: [
+      "Bluetooth 5.4 connectivity, 10-15m range",
+      "13mm driver, 35mAh per earbud, 300mAh charging case",
+      "Up to 5 hours playback/talk time per charge",
+      "Type-C charging — earbuds in ~55 min, case in ~80 min",
+      "Up to 150 days power-off standby",
+    ],
   },
   {
     name: "Space",
@@ -216,6 +328,12 @@ export const PRODUCTS = [
     alt: "True wireless earbuds with charging case, Space",
     description: "True wireless earbuds with Bluetooth 5.4 and up to 35 hours of talk and playback time, offered in ivory, black and mint finishes.",
     feature: "True Wireless",
+    specs: [
+      "Bluetooth 5.4 connectivity",
+      "Up to 35 hours combined talk & playback time",
+      "300mAh charging case, Type-C charging (~80 min)",
+      "Available in ivory, black and mint finishes",
+    ],
   },
   {
     name: "Fusion",
@@ -224,6 +342,12 @@ export const PRODUCTS = [
     alt: "True wireless earbuds with charging case, Fusion",
     description: "True wireless earbuds with Bluetooth 5.4 and up to 35 hours of talk and playback time, with fast Type-C charging and a compact charging case.",
     feature: "True Wireless",
+    specs: [
+      "Bluetooth 5.4 connectivity",
+      "Up to 35 hours combined talk & playback time",
+      "300mAh charging case, Type-C charging (~60 min)",
+      "Compact charging case",
+    ],
   },
   {
     name: "Aura 116",
@@ -232,6 +356,12 @@ export const PRODUCTS = [
     alt: "Wireless neckband earphones, Aura 116",
     description: "Wireless neckband earphones with Bluetooth 5.4, a magnetic on/off switch and up to 25 hours of talk time on a fast Type-C charge.",
     feature: "Wireless Neckband",
+    specs: [
+      "Bluetooth 5.4 connectivity with magnetic on/off switch",
+      "10mm driver, 350mAh battery",
+      "Up to 25 hours talk time per charge",
+      "Type-C charging in ~45 minutes",
+    ],
   },
   {
     name: "Aura",
@@ -240,6 +370,12 @@ export const PRODUCTS = [
     alt: "Wireless neckband earphones, Aura",
     description: "Wireless neckband earphones with Bluetooth 5.4, up to 25 hours of talk time and a 15-metre range, with quick Type-C charging for all-day wear.",
     feature: "Wireless Neckband",
+    specs: [
+      "Bluetooth 5.4 connectivity, up to 15m range",
+      "10mm driver, 350mAh battery",
+      "Up to 25 hours talk time per charge",
+      "Type-C charging in ~45 minutes",
+    ],
   },
   {
     name: "Cobra",
@@ -248,6 +384,12 @@ export const PRODUCTS = [
     alt: "Wireless neckband earphones, Cobra",
     description: "Wireless neckband earphones with Bluetooth 5.4 and up to 25 hours of talk time, finished in a sleek blue colourway with fast Type-C charging.",
     feature: "Wireless Neckband",
+    specs: [
+      "Bluetooth 5.4 connectivity, up to 15m range",
+      "10mm driver, 350mAh battery",
+      "Up to 25 hours talk time per charge",
+      "Type-C charging in ~45 minutes",
+    ],
   },
   {
     name: "Red Label",
@@ -256,6 +398,12 @@ export const PRODUCTS = [
     alt: "Wireless neckband earphones, Red Label",
     description: "Wireless neckband earphones with Bluetooth 5.4 and up to 25 hours of talk time, finished in classic black for everyday reliability.",
     feature: "Wireless Neckband",
+    specs: [
+      "Bluetooth 5.4 connectivity, up to 15m range",
+      "10mm driver, 350mAh battery",
+      "Up to 25 hours talk time per charge",
+      "Type-C charging in ~45 minutes",
+    ],
   },
   {
     name: "PB 008",
@@ -264,6 +412,12 @@ export const PRODUCTS = [
     alt: "Slim matte power bank with a coiled cable",
     description: "A slim, portable power bank — a practical gift people keep using.",
     feature: "Portable Power",
+    specs: [
+      "10,000mAh capacity, 22W output",
+      "USB-A, Type-C and Micro USB charging ports",
+      "Built-in Lightning, Type-C and Micro USB cables",
+      "Digital battery percentage display",
+    ],
   },
   {
     name: "Flix",
@@ -272,6 +426,12 @@ export const PRODUCTS = [
     alt: "Portable power bank, Flix",
     description: "A 10,000mAh power bank with 22.5W fast charging and built-in Type-C cables, featuring an LED digital display and a charge time of just 30 minutes to reach 60%.",
     feature: "Portable Power",
+    specs: [
+      "10,000mAh capacity, 22.5W fast charging",
+      "Built-in Type-C cables — no separate cable needed",
+      "LED digital battery display",
+      "30-minute charge reaches 60%",
+    ],
   },
   {
     name: "StyloMax",
@@ -280,6 +440,12 @@ export const PRODUCTS = [
     alt: "Portable power bank, StyloMax",
     description: "A 10,000mAh lithium polymer power bank with 22.5W fast charging, dual USB-A and Type-C output, and a compact, travel-friendly design with short-circuit protection.",
     feature: "Portable Power",
+    specs: [
+      "10,000mAh lithium polymer battery, 22.5W fast charging",
+      "Dual USB-A and Type-C output ports",
+      "Compact, travel-friendly design with short-circuit protection",
+      "4-LED charge level indicator",
+    ],
   },
   {
     name: "Corporate Gift Hamper",
@@ -289,6 +455,13 @@ export const PRODUCTS = [
     description:
       "A curated blend of technology, wellness and treats, presented in a premium gift box.",
     feature: "Fully Customizable",
+    specs: [
+      "REVE-Seraph True Wireless Earbuds",
+      "Mini Luxe Case Bag & Pocket Glam Cloth Pouch",
+      "Premium Dry Fruits & Premium Chocolates",
+      "Thank-You Card & Warranty Card",
+      "Presented in a premium REVE CULT gift box",
+    ],
   },
   {
     name: "REVE Flora Hamper — Golden Beige",
@@ -297,6 +470,11 @@ export const PRODUCTS = [
     alt: "REVE Flora corporate gift hamper in Golden Beige",
     description: "A REVE Flora Golden Beige earbuds gift set with a carry pouch, charging cable, warranty card and QR support card, presented in REVE CULT's signature gift box.",
     feature: "Fully Customizable",
+    specs: [
+      "REVE Flora earbuds — Golden Beige",
+      "Carry pouch & REVE CULT signature gift box",
+      "Charging cable, warranty card & QR support card",
+    ],
   },
   {
     name: "REVE Flora Hamper — Golden Black",
@@ -305,6 +483,11 @@ export const PRODUCTS = [
     alt: "REVE Flora corporate gift hamper in Golden Black",
     description: "A REVE Flora Golden Black earbuds gift set with a carry pouch, charging cable, warranty card and QR support card, presented in REVE CULT's signature gift box.",
     feature: "Fully Customizable",
+    specs: [
+      "REVE Flora earbuds — Golden Black",
+      "Carry pouch & REVE CULT signature gift box",
+      "Charging cable, warranty card & QR support card",
+    ],
   },
   {
     name: "REVE Seraph Hamper — Mint Green",
@@ -313,6 +496,11 @@ export const PRODUCTS = [
     alt: "REVE Seraph corporate gift hamper in Mint Green",
     description: "A REVE Seraph Mint Green earbuds gift set with a carry pouch, charging cable, warranty card and QR support card, presented in REVE CULT's signature gift box.",
     feature: "Fully Customizable",
+    specs: [
+      "REVE Seraph earbuds — Mint Green",
+      "Carry pouch & REVE CULT signature gift box",
+      "Charging cable, warranty card & QR support card",
+    ],
   },
   {
     name: "REVE Seraph Hamper — Silver Black",
@@ -321,6 +509,11 @@ export const PRODUCTS = [
     alt: "REVE Seraph corporate gift hamper in Silver Black",
     description: "A REVE Seraph Silver Black earbuds gift set with a carry pouch, charging cable, warranty card and QR support card, presented in REVE CULT's signature gift box.",
     feature: "Fully Customizable",
+    specs: [
+      "REVE Seraph earbuds — Silver Black",
+      "Carry pouch & REVE CULT signature gift box",
+      "Charging cable, warranty card & QR support card",
+    ],
   },
   {
     name: "REVE Seraph Hamper — Silver White",
@@ -329,6 +522,11 @@ export const PRODUCTS = [
     alt: "REVE Seraph corporate gift hamper in Silver White",
     description: "A REVE Seraph Silver White earbuds gift set with a carry pouch, charging cable, warranty card and QR support card, presented in REVE CULT's signature gift box.",
     feature: "Fully Customizable",
+    specs: [
+      "REVE Seraph earbuds — Silver White",
+      "Carry pouch & REVE CULT signature gift box",
+      "Charging cable, warranty card & QR support card",
+    ],
   },
 ];
 
