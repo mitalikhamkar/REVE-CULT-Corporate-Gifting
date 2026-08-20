@@ -110,7 +110,7 @@ export const PRODUCTS = [
     category: "TWS Earbuds",
     image: "/images/products/earbuds/Buds 3 pro.png",
     alt: "True wireless earbuds with charging case, Buds 3 Pro",
-    description: "Part of the REVE CULT TWS Earbuds range — ask our team for full specifications.",
+    description: "True wireless earbuds with Bluetooth 5.4 and up to 35 hours of combined talk and playback time, with fast Type-C charging for dependable everyday use.",
     feature: "True Wireless",
   },
   {
@@ -118,7 +118,7 @@ export const PRODUCTS = [
     category: "TWS Earbuds",
     image: "/images/products/earbuds/Groove.png",
     alt: "True wireless earbuds with charging case, Groove",
-    description: "Part of the REVE CULT TWS Earbuds range — ask our team for full specifications.",
+    description: "Compact true wireless earbuds with a 10mm driver and Bluetooth 5.4, offering up to 35 hours of talk and playback time on a quick Type-C charge.",
     feature: "True Wireless",
   },
   {
@@ -126,7 +126,7 @@ export const PRODUCTS = [
     category: "TWS Earbuds",
     image: "/images/products/earbuds/Master buds 2.png",
     alt: "True wireless earbuds with charging case, Master Buds 2",
-    description: "Part of the REVE CULT TWS Earbuds range — ask our team for full specifications.",
+    description: "True wireless earbuds with Bluetooth 5.0, up to 35 hours of talk and playback time, and an extended 80-hour Bluetooth standby.",
     feature: "True Wireless",
   },
   {
@@ -134,7 +134,7 @@ export const PRODUCTS = [
     category: "TWS Earbuds",
     image: "/images/products/earbuds/Model 181 pro.png",
     alt: "True wireless earbuds with charging case, Model 181 Pro",
-    description: "Part of the REVE CULT TWS Earbuds range — ask our team for full specifications.",
+    description: "True wireless earbuds with Bluetooth 5.0 and up to 35 hours of talk and playback time, available in multiple finishes for a versatile corporate gift.",
     feature: "True Wireless",
   },
   {
@@ -142,7 +142,7 @@ export const PRODUCTS = [
     category: "TWS Earbuds",
     image: "/images/products/earbuds/Model prime 231.png",
     alt: "True wireless earbuds with charging case, Model Prime 231",
-    description: "Part of the REVE CULT TWS Earbuds range — ask our team for full specifications.",
+    description: "Compact true wireless earbuds with Bluetooth 5.0 and Type-C charging, designed as a lightweight, pocket-friendly everyday companion.",
     feature: "True Wireless",
   },
   {
@@ -150,7 +150,7 @@ export const PRODUCTS = [
     category: "TWS Earbuds",
     image: "/images/products/earbuds/Model T310 full mat.png",
     alt: "True wireless earbuds with charging case, Model T310",
-    description: "Part of the REVE CULT TWS Earbuds range — ask our team for full specifications.",
+    description: "True wireless earbuds with Bluetooth 5.0 and up to 35 hours of talk and playback time, finished in a smooth matte design across black, white and lavender.",
     feature: "True Wireless",
   },
   {
@@ -158,7 +158,7 @@ export const PRODUCTS = [
     category: "TWS Earbuds",
     image: "/images/products/earbuds/Model zenith.png",
     alt: "True wireless earbuds with charging case, Zenith",
-    description: "Part of the REVE CULT TWS Earbuds range — ask our team for full specifications.",
+    description: "True wireless earbuds with Bluetooth 5.0 and Type-C charging, finished in an elegant two-tone metallic design available in black, gold and rose finishes.",
     feature: "True Wireless",
   },
   {
@@ -166,7 +166,7 @@ export const PRODUCTS = [
     category: "TWS Earbuds",
     image: "/images/products/earbuds/OWS-X.png",
     alt: "Open-wear true wireless earbuds, OWS-X",
-    description: "Part of the REVE CULT TWS Earbuds range — ask our team for full specifications.",
+    description: "Open-ear clip-style true wireless earbuds with Bluetooth 5.0, up to 35 hours of talk and playback time, and an 80-hour Bluetooth standby.",
     feature: "True Wireless",
   },
   {
@@ -174,7 +174,7 @@ export const PRODUCTS = [
     category: "TWS Earbuds",
     image: "/images/products/earbuds/Pro 2 Shinning.png",
     alt: "True wireless earbuds with charging case, Pro 2 Shining",
-    description: "Part of the REVE CULT TWS Earbuds range — ask our team for full specifications.",
+    description: "True wireless earbuds with Bluetooth 5.0 and Type-C charging, finished in a high-shine glossy case available in five vibrant colourways.",
     feature: "True Wireless",
   },
   {
@@ -214,7 +214,7 @@ export const PRODUCTS = [
     category: "TWS Earbuds",
     image: "/images/products/earbuds/Space.png",
     alt: "True wireless earbuds with charging case, Space",
-    description: "Part of the REVE CULT TWS Earbuds range — ask our team for full specifications.",
+    description: "True wireless earbuds with Bluetooth 5.4 and up to 35 hours of talk and playback time, offered in ivory, black and mint finishes.",
     feature: "True Wireless",
   },
   {
@@ -222,7 +222,7 @@ export const PRODUCTS = [
     category: "TWS Earbuds",
     image: "/images/products/earbuds/Fusion.png",
     alt: "True wireless earbuds with charging case, Fusion",
-    description: "Part of the REVE CULT TWS Earbuds range — ask our team for full specifications.",
+    description: "True wireless earbuds with Bluetooth 5.4 and up to 35 hours of talk and playback time, with fast Type-C charging and a compact charging case.",
     feature: "True Wireless",
   },
   {
@@ -230,7 +230,7 @@ export const PRODUCTS = [
     category: "Neckbands",
     image: "/images/products/neckbands/Aura 116.png",
     alt: "Wireless neckband earphones, Aura 116",
-    description: "Part of the REVE CULT Neckbands range — ask our team for full specifications.",
+    description: "Wireless neckband earphones with Bluetooth 5.4, a magnetic on/off switch and up to 25 hours of talk time on a fast Type-C charge.",
     feature: "Wireless Neckband",
   },
   {
@@ -238,7 +238,7 @@ export const PRODUCTS = [
     category: "Neckbands",
     image: "/images/products/neckbands/Aura.png",
     alt: "Wireless neckband earphones, Aura",
-    description: "Part of the REVE CULT Neckbands range — ask our team for full specifications.",
+    description: "Wireless neckband earphones with Bluetooth 5.4, up to 25 hours of talk time and a 15-metre range, with quick Type-C charging for all-day wear.",
     feature: "Wireless Neckband",
   },
   {
@@ -246,7 +246,7 @@ export const PRODUCTS = [
     category: "Neckbands",
     image: "/images/products/neckbands/Cobra.png",
     alt: "Wireless neckband earphones, Cobra",
-    description: "Part of the REVE CULT Neckbands range — ask our team for full specifications.",
+    description: "Wireless neckband earphones with Bluetooth 5.4 and up to 25 hours of talk time, finished in a sleek blue colourway with fast Type-C charging.",
     feature: "Wireless Neckband",
   },
   {
@@ -254,7 +254,7 @@ export const PRODUCTS = [
     category: "Neckbands",
     image: "/images/products/neckbands/Red Label.png",
     alt: "Wireless neckband earphones, Red Label",
-    description: "Part of the REVE CULT Neckbands range — ask our team for full specifications.",
+    description: "Wireless neckband earphones with Bluetooth 5.4 and up to 25 hours of talk time, finished in classic black for everyday reliability.",
     feature: "Wireless Neckband",
   },
   {
@@ -270,7 +270,7 @@ export const PRODUCTS = [
     category: "Power Banks",
     image: "/images/products/powerbanks/Flix.png",
     alt: "Portable power bank, Flix",
-    description: "Part of the REVE CULT Power Banks range — ask our team for full specifications.",
+    description: "A 10,000mAh power bank with 22.5W fast charging and built-in Type-C cables, featuring an LED digital display and a charge time of just 30 minutes to reach 60%.",
     feature: "Portable Power",
   },
   {
@@ -278,7 +278,7 @@ export const PRODUCTS = [
     category: "Power Banks",
     image: "/images/products/powerbanks/StyloMax.png",
     alt: "Portable power bank, StyloMax",
-    description: "Part of the REVE CULT Power Banks range — ask our team for full specifications.",
+    description: "A 10,000mAh lithium polymer power bank with 22.5W fast charging, dual USB-A and Type-C output, and a compact, travel-friendly design with short-circuit protection.",
     feature: "Portable Power",
   },
   {
