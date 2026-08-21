@@ -49,7 +49,9 @@ export default function ProductCard({ product }) {
             <button type="button" onClick={() => setOpen(false)} aria-label="Close" className="absolute top-4 right-4 z-10 w-9 h-9 rounded-full bg-white/90 flex items-center justify-center text-reve-charcoal hover:text-reve-terracotta transition-colors">
               <X className="w-4 h-4" />
             </button>
-            <Image src={product.image} alt={product.alt} loading="lazy" className="w-full h-64 object-cover" />
+            <div className="w-full h-72 sm:h-80 bg-reve-peachcream/60 flex items-center justify-center">
+              <Image src={product.image} alt={product.alt} loading="lazy" className="w-full h-full object-contain" />
+            </div>
             <div className="p-6 sm:p-8">
               <span className="text-[10px] uppercase tracking-[0.16em] text-reve-terracotta">{product.feature}</span>
               <h3 className="mt-2 font-heading text-2xl font-semibold text-reve-charcoal leading-snug">{product.name}</h3>
