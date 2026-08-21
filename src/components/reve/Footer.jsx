@@ -16,7 +16,7 @@ export default function Footer() {
           </p>
           <div className="mt-6 flex gap-3">
             <a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/reve_cult"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="REVE CULT Gifts on Instagram"
@@ -25,7 +25,7 @@ export default function Footer() {
               <Instagram className="w-4 h-4" />
             </a>
             <a
-              href="https://www.linkedin.com/"
+              href="https://www.linkedin.com/company/reve-cult"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="REVE CULT Gifts on LinkedIn"
